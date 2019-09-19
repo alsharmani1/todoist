@@ -1,5 +1,10 @@
 import React from 'react'
-import { FaCheevronDown, FaInbox, FaRegCalenderAlt, FaRegCalender} from 'react-icons/fa';
+import { 
+    FaChevronDown, 
+    FaInbox, 
+    FaRegCalendarAlt, 
+    FaRegCalendar
+} from 'react-icons/fa';
 
 export const Sidebar = () => {
     return (
@@ -13,13 +18,13 @@ export const Sidebar = () => {
                 </li>
                 <li>
                     <span> 
-                        <FaRegCalender />
+                        <FaRegCalendar />
                     </span>
                     <span>Today</span>
                 </li>
                 <li>
                     <span> 
-                        <FaRegCalender />
+                        <FaRegCalendarAlt />
                     </span>
                     <span>Next 7 days</span>
                 </li>
@@ -27,7 +32,7 @@ export const Sidebar = () => {
 
             <div className="sidebar__middle">
                 <span>
-                    <FaCheevronDown />
+                    <FaChevronDown />
                 </span>
                 <h2>Projects</h2>
             </div>
