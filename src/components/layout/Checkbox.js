@@ -2,10 +2,10 @@ import { firebase } from 'firebase';
 import React, { Fragment } from 'react'
 
 
-export const Checkbox = ({id}) => {
+export const Checkbox = ({ id }) => {
     const archivedTask =() => {
         firebase
-            .firestroe()
+            .firestore()
             .collection('tasks')
             .doc(id)
             .update({
@@ -15,9 +15,9 @@ export const Checkbox = ({id}) => {
 
     return (
         <Fragment>
-            <div className="checkbox-holder" 
-            data-testid="checkbox-action" 
-            onClick={() => archivedTask()}
+                <div className="checkbox-holder" 
+                data-testid="checkbox-action" 
+                onClick={() => archivedTask()}
             >
                 <span className="checkbox" />
             </div>
